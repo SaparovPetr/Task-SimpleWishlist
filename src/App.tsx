@@ -78,9 +78,24 @@ function App() {
 		wordBreak: "normal",
 	};
 
-	const listStyle: React.CSSProperties = {};
+	const listStyle: React.CSSProperties = {
+		display: "flex",
+		flexDirection: "column",
+		gap: "15px",
+		padding: "0",
+		width: "300px",
+	};
 
-	const listItemStyle: React.CSSProperties = {};
+	const listItemStyle: React.CSSProperties = {
+		display: "flex",
+		justifyContent: "space-between",
+		alignItems: "center",
+		padding: "10px 20px",
+		border: "1px solid white",
+		borderRadius: "30px",
+		color: "white",
+		wordBreak: "break-all",
+	};
 
 	const messageStyle: React.CSSProperties = {};
 
