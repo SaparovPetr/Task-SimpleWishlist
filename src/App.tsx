@@ -97,7 +97,10 @@ function App() {
 		wordBreak: "break-all",
 	};
 
-	const messageStyle: React.CSSProperties = {};
+	const messageStyle: React.CSSProperties = {
+		fontSize: "18px",
+		color: "white",
+	};
 
 	return (
 		<div style={containerStyle}>
