@@ -50,17 +50,17 @@ function App() {
 		alignItems: "center",
 		justifyContent: "center",
 		gap: "20px",
-		padding: "50px",
+		padding: "30px",
 		border: "1px solid white",
 		borderRadius: "30px",
-		margin: "40px 50px",
+		margin: "5px",
 	};
 
 	const inputStyle: React.CSSProperties = {
 		padding: "20px",
 		fontSize: "16px",
 		marginBottom: "10px",
-		width: "300px",
+		minWidth: "180px",
 		border: "1px solid white",
 		background: "#323131",
 		borderRadius: "30px",
@@ -83,7 +83,7 @@ function App() {
 		flexDirection: "column",
 		gap: "15px",
 		padding: "0",
-		width: "300px",
+		minWidth: "180px",
 	};
 
 	const listItemStyle: React.CSSProperties = {
@@ -95,6 +95,10 @@ function App() {
 		borderRadius: "30px",
 		color: "white",
 		wordBreak: "break-all",
+	};
+
+	const listTextStyle: React.CSSProperties = {
+		paddingRight: "10px",
 	};
 
 	const messageStyle: React.CSSProperties = {
@@ -121,7 +125,7 @@ function App() {
 				<ul style={listStyle}>
 					{wishList.map((wish, index) => (
 						<li key={uuidv4()} style={listItemStyle}>
-							{wish}
+							<div style={listTextStyle}>{wish}</div>
 							<button
 								onClick={() => handleDeleteWish(index)}
 								style={buttonStyle}
