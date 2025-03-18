@@ -56,9 +56,27 @@ function App() {
 		margin: "40px 50px",
 	};
 
-	const inputStyle: React.CSSProperties = {};
+	const inputStyle: React.CSSProperties = {
+		padding: "20px",
+		fontSize: "16px",
+		marginBottom: "10px",
+		width: "300px",
+		border: "1px solid white",
+		background: "#323131",
+		borderRadius: "30px",
+		color: "white",
+	};
 
-	const buttonStyle: React.CSSProperties = {};
+	const buttonStyle: React.CSSProperties = {
+		padding: "10px 20px",
+		fontSize: "16px",
+		cursor: "pointer",
+		borderRadius: "30px",
+		color: "white",
+		border: "1px solid white",
+		background: "#323131",
+		wordBreak: "normal",
+	};
 
 	const listStyle: React.CSSProperties = {};
 
