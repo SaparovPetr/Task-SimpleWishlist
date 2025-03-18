@@ -44,7 +44,17 @@ function App() {
 	}, [wishList]);
 
 	// Стилизация компонентов
-	const containerStyle: React.CSSProperties = {};
+	const containerStyle: React.CSSProperties = {
+		display: "flex",
+		flexDirection: "column",
+		alignItems: "center",
+		justifyContent: "center",
+		gap: "20px",
+		padding: "50px",
+		border: "1px solid white",
+		borderRadius: "30px",
+		margin: "40px 50px",
+	};
 
 	const inputStyle: React.CSSProperties = {};
 
